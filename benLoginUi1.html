@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenLoginUI1</title>
+
+    <style>
+
+        .box-container{          
+            background: url(b1.jpeg);            
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+
+        #wrapper{
+            background-color: yellow;
+            border: 5px solid chocolate;
+            border-radius: 25px;
+            box-shadow: 0 0 9px 3px dodgerblue;
+            height: 400px;
+            margin-top: 70px;
+            padding-top: 70px;
+            text-align: center;             
+            width: 250px;                       
+        }
+
+        input[type=submit]{
+            background-color: dodgerblue;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            height:40px;
+            outline: none;
+            margin: 7px;
+            width: 180px;     
+        }
+
+        input[type=submit]:hover{
+            cursor: pointer;
+            background-color: #055fc7;
+            color: #fff;
+        }
+
+        input{
+            border: 2px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin: 7px;
+            padding: 7px;            
+            outline: none;            
+            transition: 1s;
+        }
+
+        input:focus{
+            border-color: chocolate;
+            box-shadow: 0 0 9px 3px chocolate;
+        }        
+
+        a{
+            padding: 20px;
+            text-decoration: none;
+            color: brown;
+        }
+
+        a:hover{
+            color: dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div id="wrapper">
+        
+            <p style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; margin: 4px; 
+                      text-indent: -90px;">Sign in</p> 
+
+            <form action="">
+                <label for="usr"></label><br>
+                <input type="text" id="usr" name="usr" placeholder="Username"><br>
+                <label for="pwd"></label>
+                <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+                <input type="submit" placeholder="Submit" >
+            </form><br><br>
+
+            <a href="#">Forgot Your Password?</a>
+        </div> 
+    </div>
+</body>
+</html>
